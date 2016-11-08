@@ -26,4 +26,8 @@ public class Block {
     public void setIrany(float f1,float f2) {
         this.irany = new Pont(f1,f2);
     }
+
+    public void move() {
+        System.out.println("A mozgás még nincs kész");
+    }
 }
