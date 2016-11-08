@@ -1,0 +1,52 @@
+package com.mygdx.game.myclasses;
+
+import com.badlogic.gdx.scenes.scene2d.Actor;
+
+/**
+ * Created by tuskeb on 2016. 09. 30..
+ */
+abstract public class MyActor extends Actor {
+
+    protected float elapsedTime = 0;
+
+
+    public MyActor() {
+        super();
+    }
+
+    @Override
+    public void act(float delta) {
+        super.act(delta);
+        elapsedTime += delta;
+    }
+
+    @Override
+    protected void sizeChanged() {
+        super.sizeChanged();
+        setOrigin(getWidth() / 2, getHeight() / 2);
+    }
+
+    @Override
+    protected void positionChanged() {
+        super.positionChanged();
+    }
+
+    @Override
+    protected void rotationChanged() {
+        super.rotationChanged();
+    }
+
+
+    public void resetElapsedTime()
+    {
+        elapsedTime = 0;
+    }
+
+    public float getElapsedTime() {
+        return elapsedTime;
+    }
+
+    public void setElapsedTime(float elapsedTime) {
+        this.elapsedTime = elapsedTime;
+    }
+}
