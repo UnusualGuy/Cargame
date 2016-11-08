@@ -9,9 +9,9 @@ public class Physics {
 
     static Vector<Block> blocks = new Vector();
 
-    public static void calcualte() {
+    public static void calcualte(float dt) {
         for (int i = 0; i < blocks.size() ; i++){
-            blocks.get(i).move();
+            blocks.get(i).move(dt);
         }
     }
 }

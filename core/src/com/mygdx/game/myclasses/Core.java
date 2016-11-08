@@ -26,7 +26,7 @@ public class Core {
 
             if(nowtime-starttime > dt){
                 starttime = System.currentTimeMillis();
-                Physics.calcualte();
+                Physics.calcualte(dt);
             }
 
 
