@@ -5,5 +5,10 @@ package com.mygdx.game.physics;
  */
 public class Blockade extends Block{
 
+    Blockade(float i1,float i2,float i3,float i4){
+        super(i1,i2,i3,i4);
+
+    }
+
 
 }
